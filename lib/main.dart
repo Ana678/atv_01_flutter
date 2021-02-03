@@ -21,8 +21,9 @@ class _HomeState extends State<Home> {
       if (_pessoa >= 20) {
         _mensagem = "Lotado, não pode entrar.";
         _pessoa = 20;
-      } else if (_pessoa < 0) {
+      } else if (_pessoa < 20 && _pessoa >= 0) {
         _mensagem = "Pode entrar!";
+      } else {
         _pessoa = 0;
       }
     });
@@ -42,7 +43,7 @@ class _HomeState extends State<Home> {
             Text(
               "Pessoas: $_pessoa",
               style:
-              TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ), //text
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
