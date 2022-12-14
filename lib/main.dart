@@ -11,7 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  @override
   int _pessoa = 0;
   String _mensagem = "Pode entrar!";
 
@@ -50,7 +49,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.all(10.0),
-                  child: FlatButton(
+                  child: ElevatedButton(
                     child: Text(
                       "+1",
                       style: TextStyle(fontSize: 40.0, color: Colors.white),
@@ -62,7 +61,7 @@ class _HomeState extends State<Home> {
                 ),
                 Padding(
                   padding: EdgeInsets.all(10.0),
-                  child: FlatButton(
+                  child: ElevatedButton(
                     child: Text(
                       "-1",
                       style: TextStyle(fontSize: 40.0, color: Colors.white),
