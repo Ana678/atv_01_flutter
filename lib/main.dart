@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
         Container(
             width: double.infinity,
             height: double.infinity,
-            color: Colors.black38,
+            color: Color.fromRGBO(0, 0, 0, 0.7),
         ),
         Padding(
             padding: EdgeInsets.fromLTRB(32, 120, 32, 40),
@@ -85,15 +85,16 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.cyan,
+                            backgroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0), // Raio da borda do botão
                             ),
                             padding: EdgeInsets.all(16.0),
                         ),
-                        child: Text(
+                        child:
+                        Text(
                         "Registrar Entrada",
-                        style: TextStyle(fontSize: 24.0, color: Colors.white),
+                            style: TextStyle(fontSize: 24.0, color: Color.fromRGBO(41, 35, 35, 1)),
                         ),
                         onPressed: () {
                         _changePeople(1);
@@ -103,7 +104,7 @@ class _HomeState extends State<Home> {
                         padding: EdgeInsets.fromLTRB(0, 24, 0, 0),
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                backgroundColor:Colors.deepOrange,
+                            backgroundColor: Color.fromRGBO(41, 35, 35, 1),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10.0), // Raio da borda do botão
                                 ),
